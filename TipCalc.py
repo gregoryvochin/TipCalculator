@@ -31,8 +31,8 @@ while selectedTip not in tipPercentages:
 
 tippedBill = float(totalBill) * float(selectedTip)
 roundedTotalBill = round(tippedBill, 2)
-print(f"The total bill is ${roundedTotalBill}")
+print("The total bill is ${:.2f}".format(roundedTotalBill))
 
-splitBill = float(roundedTotalBill) / float(peoplePaying)
+splitBill = float(roundedTotalBill) / int(peoplePaying)
 roundedSplitBill = round(splitBill, 2)
-print(f"Each patron is due to pay ${roundedSplitBill}")
+print("Each patron is due to pay ${:.2f}".format(roundedSplitBill))
